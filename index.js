@@ -2,7 +2,7 @@ const express = require('express');
 const fetch = require('node-fetch');
 const cors = require("cors");
 
-const port = 2020;
+const port = process.env.PORT || 2020;
 
 const app = express();
 app.use(cors());
